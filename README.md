@@ -1,3 +1,17 @@
+---
+title: AI Speaking Coach
+emoji: 🗣️
+colorFrom: blue
+colorTo: pink
+sdk: docker
+app_file: app.main
+pinned: false
+---
+# AI Speaking Coach (FastAPI Demo)
+
+This is a FastAPI deployment demo using BLIP-1 and optional LLM support...
+
+
 # AI Speaking Coach (FastAPI Demo)
  
 **[Online Demo](https://ai-speaking-coach.onrender.com)**
