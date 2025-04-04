@@ -1,4 +1,6 @@
 # AI Speaking Coach (FastAPI Demo)
+ 
+**[Online Demo](https://ai-speaking-coach.onrender.com)**
 
 This is a simple model deployment demo using FastAPI. It demonstrates how to:
 
@@ -7,6 +9,8 @@ This is a simple model deployment demo using FastAPI. It demonstrates how to:
 - Chain their outputs to create a natural language response from an image
 
 The main goal is to showcase the flexibility of using FastAPI for serving local models and integrating external APIs. This approach can be adapted for building scalable multimodal applications.
+
+ **[Online Demo](https://ai-speaking-coach.onrender.com)**
 
 ## How it works
 
@@ -21,7 +25,7 @@ This is a simplified setup for demonstration purposes. In real-world use cases, 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/speaking-coach-demo.git
+git clone https://github.com/bJabbari/AI-speaking-coach.git
 cd speaking-coach-demo
 ```
 
@@ -53,22 +57,12 @@ TOGETHER_API_KEY=your_together_api_key
 uvicorn main:app --reload
 ```
 
-Visit `http://127.0.0.1:8000` in your browser.
 
 ## Deploying on GitHub & Render
 
 ### Upload to GitHub
 
 1. Initialize a local Git repo:
-
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-git branch -M main
-git remote add origin https://github.com/your-username/speaking-coach-demo.git
-git push -u origin main
-```
 
 ### Deploy on Render
 
@@ -77,7 +71,7 @@ git push -u origin main
 3. Connect your GitHub repository
 4. Choose:
    - Runtime: Python 3
-   - Start command: `uvicorn main:app --host=0.0.0.0 --port=10000`
+   - Start command: `uvicorn app.main:app --host=0.0.0.0 --port=10000`
 5. Add your environment variables (`.env`) in Render's dashboard
 6. Click "Deploy"
 
