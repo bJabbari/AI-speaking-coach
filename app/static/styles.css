@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f4f6;
+    color: #333;
+    max-width: 700px;
+    margin: 2em auto;
+    padding: 1em;
+}
+
+.container {
+    background: #f2f4f6;  /* match body background */
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+#dropzone {
+    border: 2px dashed #bbb;
+    border-radius: 10px;
+    padding: 2em;
+    text-align: center;
+    cursor: pointer;
+    background: #fff;
+    transition: background 0.3s;
+    margin-bottom: 1em;
+}
+
+#dropzone.dragover {
+    background-color: #e0e0e0;
+}
+
+#dropzone img {
+    margin-top: 1em;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 0.8em;
+    margin-top: 1em;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.spinner {
+    margin: 1em auto;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #007bff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

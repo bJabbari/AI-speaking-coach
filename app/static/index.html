@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Speaking Coach</title>
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🗣️ AI Speaking Coach</h1>
+
+        <div id="dropzone">
+            <p>📁 Click or Drag & Drop an Image Here</p>
+            <input type="file" id="imageInput" accept="image/*" hidden />
+            <img id="previewImage" style="display:none;" />
+        </div>
+
+        <label for="bandSelect">🎯 Select Band Level:</label>
+        <select id="bandSelect">
+            <option value="6">Band 6</option>
+            <option value="7" selected>Band 7</option>
+            <option value="8">Band 8</option>
+            <option value="9">Band 9</option>
+        </select>
+
+        <label for="apiKeyInput">🔐 Optional: Enter your LLM API Key (<a href="https://api.together.xyz/" target="_blank">Together.AI</a>)</label>
+        <input type="password" id="apiKeyInput" placeholder="Paste your API key here...">
+
+        <button id="generateBtn" onclick="generate()">Generate Response</button>
+        <div id="spinner" class="spinner" style="display:none;"></div>
+
+        <h3>🧠 Caption:</h3>
+        <p id="caption"></p>
+
+        <h3>🗣️ Speaking Response:</h3>
+        <p id="response"></p>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
